@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #F7F5F0;
+    --paper-card: #FDFCFA;
+    --paper-bubble-user: #EFEAE0;
+    --ink-primary: #1C1C1A;
+    --ink-secondary: #8B8578;
+    --hairline: #DDD6C8;
+    --hairline-subtle: #EBE5D8;
+    --ink-accent: #2C3E50;
+    --ink-burgundy: #7A2E2E;
+  }
+
+  body {
+    font-family: 'Lora', 'Georgia', 'Times New Roman', serif;
+    background-color: #F7F5F0;
+    color: #1C1C1A;
+    line-height: 1.68;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Selection in warm sepia ink */
+  ::selection {
+    background-color: #E2DAC8;
+    color: #1C1C1A;
+  }
+
+  /* Custom subtle scrollbars like old paper books */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D8D0C0;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B8B09F;
+  }
+}
+
+/* Subtle fading underline loading bar */
+@keyframes paper-pulse-line {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-paper-line {
+  animation: paper-pulse-line 1.8s infinite ease-in-out;
+}

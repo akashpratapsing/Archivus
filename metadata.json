@@ -1,0 +1,8 @@
+{
+  "name": "Archivus RAG Chatbot",
+  "description": "Enterprise-grade RAG knowledge base chatbot with document indexing, vector embeddings, hybrid provider support (Gemini & Groq), and verifiable source citations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
